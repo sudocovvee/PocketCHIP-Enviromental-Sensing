@@ -3,3 +3,6 @@ Adafruit_CCS811_python/
 DHT11_Python/
 DHT11_Python_CHIP/
 *.xml
+.idea/vcs.xml
+.idea/vcs.xml
+.idea/workspace.xml
