@@ -20,7 +20,7 @@ def alg_result_data():
 def status():
     with SMBus(2) as bus:
         dat1 = bus.read_byte_data(address, 0)
-        final_dat = dat1 << 8
+        final_dat = str(dat1 << 8)
     return final_dat
 
 
@@ -29,4 +29,4 @@ def status():
 #Print the data:
 dat1 = alg_result_data()
 dat2 = status()
-print("Status: " + str(dat2) + "\nData: " + str(dat2))
+print("Status: " + dat2 + "\nData: " + str(dat1))
