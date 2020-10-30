@@ -29,4 +29,4 @@ def status():
 #Print the data:
 dat1 = alg_result_data()
 dat2 = status()
-print("Status: " + dat2 + "\nData: " + dat2)
+print("Status: " + str(dat2) + "\nData: " + str(dat2))
