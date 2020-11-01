@@ -11,9 +11,9 @@ address = 0x5a
 
 def alg_result_data():
     with SMBus(2) as bus:
-        dat1 = bus.read_byte_data(address, 16)
-        dat2 = bus.read_byte_data(address, 3)
-        final_dat = (dat1 << 64) # + dat2
+        eCO2 = bus.read_byte_data(address, 2) + (bus.read_byte_data(address, 2) << 1)
+        VOC = (bus.read_byte_data(address, 2) << 2) + (bus.read_byte_data(address, 2) << 3)
+        final_dat = ("eCO2: "+ str(eCO2) + "\nVOC: " + str(VOC)) # + dat2
     return final_dat
 
 
@@ -29,4 +29,4 @@ def status():
 #Print the data:
 dat1 = alg_result_data()
 dat2 = status()
-print("Status: " + dat2 + "\nData: " + str(dat1))
+print("Status: " + dat2 + "\nData: " + dat1)
