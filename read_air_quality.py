@@ -12,7 +12,7 @@ address = 0x5a
 def alg_result_data():
     with SMBus(2) as bus:
         eCO2 = bus.read_byte_data(address, 0x02)
-        VOC = eCO2 << 4
+        VOC = eCO2 >> 4
         final_dat = ("eCO2: "+ str(eCO2) + "\nVOC: " + str(VOC)) # + dat2
     return final_dat
 
