@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c981e56b-874e-42be-8fd4-c197f2d7b1c1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/DHT11_Python_CHIP/dht11/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/DHT11_Python_CHIP/dht11/__init__.py" afterDir="false" />
-    </list>
+    <list default="true" id="c981e56b-874e-42be-8fd4-c197f2d7b1c1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +66,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
