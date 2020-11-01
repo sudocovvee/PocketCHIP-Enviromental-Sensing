@@ -11,9 +11,9 @@ address = 0x5a
 
 def alg_result_data():
     with SMBus(2) as bus:
-        dat1 = bus.read_byte_data(address, 2)
+        dat1 = bus.read_byte_data(address, 16)
         dat2 = bus.read_byte_data(address, 3)
-        final_dat = (dat1 << 8) # + dat2
+        final_dat = (dat1 << 64) # + dat2
     return final_dat
 
 
